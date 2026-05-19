@@ -2,338 +2,284 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
-    <title>Privacy Policy | Molaglora</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Molaglora App</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600&display=swap');
 
-:root {
-    --deep-navy: #07223F;
-    --electric-blue: #1877F2;
-    --steel-blue: #4A6CA3;
-    --ice-white: #F5F9FF;
-    --carbon: #1A1A2E;
-    --pure-white: #FFFFFF;
-    --off-ice: #E8F0FE;
-    --navy-electric: linear-gradient(135deg, #07223F 0%, #1877F2 100%);
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #F5F9FF;
+            color: #1A1A2E;
+            line-height: 1.65;
+        }
 
-body { 
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Inter', sans-serif; 
-    background-color: var(--ice-white); 
-    color: var(--carbon); 
-    line-height: 1.7;
-}
+        .navbar {
+            background: #07223F;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
 
-[lang="ar"] { direction: rtl; }
+        .logo {
+            font-family: 'Audiowide', cursive;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
 
-h1, h2, .logo, .label-caps {
-    font-family: 'Audiowide', cursive;
-    text-transform: uppercase;
-}
+        .logo span {
+            color: #1877F2;
+        }
 
-h1 { 
-    font-size: 30px; 
-    margin: 0 0 0.5rem 0;
-}
-h2 {
-    font-size: 22px;
-    color: var(--deep-navy);
-    margin-top: 2rem;
-    border-left: 4px solid var(--electric-blue);
-    padding-left: 12px;
-}
-[lang="ar"] h2 {
-    border-left: none;
-    border-right: 4px solid var(--electric-blue);
-    padding-right: 12px;
-}
+        .nav-badge {
+            color: white;
+            font-family: 'Audiowide', cursive;
+            font-size: 0.7rem;
+            background: #1877F2;
+            padding: 4px 12px;
+            border-radius: 40px;
+        }
 
-p { margin-bottom: 1rem; }
+        .hero {
+            background: linear-gradient(135deg, #07223F 0%, #1877F2 100%);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+        }
 
-.navbar {
-    background: var(--deep-navy);
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+        .hero h1 {
+            font-family: 'Audiowide', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
 
-.logo {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
+        .privacy-card {
+            max-width: 1000px;
+            margin: -2rem auto 3rem auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -12px rgba(7, 34, 63, 0.12);
+            padding: 2rem 2.2rem;
+            border: 1px solid #E8F0FE;
+        }
 
-.logo span {
-    font-weight: 400;
-    color: var(--electric-blue);
-}
+        .privacy-card p, .privacy-card li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
 
-.hero {
-    background: var(--navy-electric);
-    color: white;
-    text-align: center;
-    padding: 60px 5%;
-}
+        .privacy-card ul, .privacy-card ol {
+            margin: 0.5rem 0 1rem 1.8rem;
+        }
 
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
+        .privacy-card li {
+            margin-bottom: 0.3rem;
+        }
 
-.content-wrapper {
-    max-width: 1000px;
-    margin: -40px auto 60px;
-    background: white;
-    padding: 40px 48px;
-    border-radius: 24px;
-    border: 1px solid var(--off-ice);
-    box-shadow: 0 20px 35px -12px rgba(7,34,63,0.1);
-}
+        .privacy-card h2 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem 0;
+            color: #07223F;
+        }
 
-.lang-toggle {
-    background: var(--electric-blue);
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 40px;
-    cursor: pointer;
-    font-family: 'Audiowide', cursive;
-    font-size: 13px;
-    transition: 0.2s ease;
-}
+        hr {
+            margin: 1.8rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
 
-.lang-toggle:hover {
-    background: #0e5fc7;
-    transform: scale(0.97);
-}
+        footer {
+            background: #07223F;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 1rem;
+        }
 
-footer {
-    background: var(--deep-navy);
-    color: white;
-    text-align: center;
-    padding: 40px 5%;
-}
+        .footer-divider {
+            height: 1px;
+            background: #4A6CA3;
+            margin: 1.2rem 0;
+            opacity: 0.3;
+        }
 
-.footer-line {
-    height: 1px;
-    background: var(--steel-blue);
-    margin: 20px 0;
-    opacity: 0.3;
-}
-
-.contact-highlight {
-    background: var(--off-ice);
-    padding: 0.2rem 0.8rem;
-    border-radius: 30px;
-    font-family: monospace;
-    font-weight: 500;
-    color: var(--deep-navy);
-}
-
-.effective-date {
-    background: #eef2fa;
-    padding: 0.5rem 1rem;
-    border-radius: 60px;
-    display: inline-block;
-    font-size: 0.85rem;
-    margin-top: 1rem;
-}
-
-@media (max-width: 680px) {
-    .content-wrapper {
-        padding: 28px 20px;
-        margin: -30px 20px 50px;
-    }
-    h1 { font-size: 24px; }
-    h2 { font-size: 20px; }
-}
+        @media (max-width: 700px) {
+            .privacy-card {
+                padding: 1.5rem;
+                margin: -2rem 1rem 2rem 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
 <nav class="navbar">
-    <a class="logo">MOLAGLORA <span></span></a>
-    <div style="display:flex; gap:12px; align-items:center;">
-        <span class="label-caps" style="color:white; font-size:12px;">by Zeyad Mohamed</span>
-        <button class="lang-toggle" onclick="toggleLang()" id="langBtn">عربي</button>
+    <a class="logo">MOLAGLORA <span>• BOOKING</span></a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+        <span class="nav-badge">by Zeyad Mohamed</span>
     </div>
 </nav>
 
 <header class="hero">
-    <div id="hero-en">
-        <h1>Privacy Policy</h1>
-        <p>Your trust matters — clarity and protection first.</p>
-    </div>
-    <div id="hero-ar" style="display:none;">
-        <h1>سياسة الخصوصية</h1>
-        <p>ثقتك تهمنا — الوضوح والحماية أولاً</p>
-    </div>
+    <h1>Privacy Policy</h1>
+    <p>Molaglora App</p>
 </header>
 
-<main class="content-wrapper">
+<main class="privacy-card">
+    <!-- EXACT TEXT PROVIDED - NO MODIFICATIONS -->
+    <p><strong>📄 Privacy Policy — Molaglora App</strong></p>
 
-<!-- ENGLISH VERSION (Privacy Policy, individual dev) -->
-<div id="content-en">
+    <p><strong>Effective date:</strong> 2026-05-19<br>
+    <strong>Service Provider:</strong> Zeyad Mohamed (Ice Code)</p>
 
-    <p style="font-size:1rem; background:#F0F4FC; padding:12px 18px; border-radius:20px;">
-        <strong>Effective date:</strong> May 19, 2026 &nbsp;|&nbsp; 
-        <strong>Service Provider:</strong> Zeyad Mohamed (individual developer)
-    </p>
+    <p><strong>Privacy Policy</strong></p>
 
-    <p>This privacy policy applies to the Molaglora app (hereby referred to as <strong>"Application"</strong>) for mobile devices that was created by <strong>Zeyad Mohamed</strong> (hereby referred to as <strong>"Service Provider"</strong>) as a Free service. This service is intended for use <strong>"AS IS"</strong>.</p>
+    <p>This privacy policy applies to the Molaglora application (hereby referred to as "Application") for mobile devices, created by Zeyad Mohamed (hereby referred to as "Service Provider") as a free service. This service is intended for use "AS IS".</p>
 
-    <h2>Information Collection and Use</h2>
-    <p>The Application collects information when you download and use it. This information may include:</p>
+    <p><strong>1. Information Collection and Use</strong></p>
+
+    <p>The Application collects the following user-provided information:</p>
+
     <ul>
-        <li>Your device's Internet Protocol address (e.g. IP address)</li>
-        <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
-        <li>The time spent on the Application</li>
-        <li>The operating system you use on your mobile device</li>
-    </ul>
-    <p>The Application <strong>does not gather precise information</strong> about the location of your mobile device.</p>
-    <p>The Application <strong>does not use Artificial Intelligence (AI)</strong> technologies to process your data or provide features.</p>
-    <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
-    <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to <strong>Zeyadm7811@gmail.com</strong>. The information that the Service Provider requests will be retained by them and used as described in this privacy policy.</p>
-
-    <h2>Third Party Access</h2>
-    <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
-    <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
-    <ul>
-        <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-        <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-        <li>with their trusted service providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+        <li>Full name</li>
+        <li>Email address</li>
+        <li>Password (securely stored in hashed form and not directly accessible)</li>
+        <li>Phone number</li>
+        <li>Age</li>
+        <li>Gender</li>
     </ul>
 
-    <h2>Opt-Out Rights</h2>
-    <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
+    <p>The phone number may be verified using a one-time password (OTP) during registration to ensure account authenticity.</p>
 
-    <h2>Data Retention Policy</h2>
-    <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at <strong>contact@icecodeco.com</strong> and they will respond in a reasonable time.</p>
+    <p>The Application may also collect limited technical information automatically, such as:</p>
 
-    <h2>Children</h2>
-    <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
-    <p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourages parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (<strong>contact@icecodeco.com</strong>) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
-
-    <h2>Security</h2>
-    <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
-
-    <h2>Changes</h2>
-    <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
-    <p>This privacy policy is effective as of <strong>2026-05-19</strong>.</p>
-
-    <h2>Your Consent</h2>
-    <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <strong class="contact-highlight">contact@icecodeco.com</strong>.</p>
-
-    
-</div>
-
-<!-- ARABIC VERSION (Privacy Policy, individual dev) -->
-<div id="content-ar" style="display:none;" lang="ar">
-
-    <p style="font-size:1rem; background:#F0F4FC; padding:12px 18px; border-radius:20px;">
-        <strong>تاريخ السريان:</strong> ١٩ مايو ٢٠٢٦ &nbsp;|&nbsp; 
-        <strong>مقدم الخدمة:</strong> زياد محمد (مطور فردي)
-    </p>
-
-    <p>تنطبق سياسة الخصوصية هذه على تطبيق "مولاجلورا" (يُشار إليه بـ "التطبيق") للأجهزة المحمولة الذي تم إنشاؤه بواسطة <strong>زياد محمد</strong> (يُشار إليه بـ "مقدم الخدمة") كخدمة مجانية. هذه الخدمة مخصصة للاستخدام "كما هي".</p>
-
-    <h2>جمع المعلومات واستخدامها</h2>
-    <p>يقوم التطبيق بجمع المعلومات عند تنزيله واستخدامه. قد تشمل هذه المعلومات:</p>
     <ul>
-        <li>عنوان بروتوكول الإنترنت لجهازك (مثل عنوان IP)</li>
-        <li>صفحات التطبيق التي تزورها، وقت وتاريخ زيارتك، الوقت الذي تقضيه على تلك الصفحات</li>
-        <li>الوقت الذي تقضيه في التطبيق</li>
-        <li>نظام التشغيل الذي تستخدمه على جهازك المحمول</li>
-    </ul>
-    <p>لا يجمع التطبيق معلومات دقيقة عن <strong>موقع جهازك المحمول</strong>.</p>
-    <p>لا يستخدم التطبيق <strong>تقنيات الذكاء الاصطناعي</strong> لمعالجة بياناتك أو توفير ميزات.</p>
-    <p>يجوز لمقدم الخدمة استخدام المعلومات التي قدمتها للاتصال بك من وقت لآخر لتزويدك بمعلومات مهمة وإشعارات مطلوبة وعروض تسويقية.</p>
-    <p>للحصول على تجربة أفضل، أثناء استخدام التطبيق، قد يطلب منك مقدم الخدمة تقديم معلومات معينة يمكن التعرف عليك شخصيًا، بما في ذلك على سبيل المثال لا الحصر <strong>Zeyadm7811@gmail.com</strong>. سيتم الاحتفاظ بالمعلومات التي يطلبها مقدم الخدمة واستخدامها كما هو موضح في سياسة الخصوصية هذه.</p>
-
-    <h2>وصول الطرف الثالث</h2>
-    <p>يتم إرسال البيانات المجمعة وغير المحددة هوية بشكل دوري إلى خدمات خارجية لمساعدة مقدم الخدمة في تحسين التطبيق وخدمتهم. يجوز لمقدم الخدمة مشاركة معلوماتك مع أطراف ثالثة بالطرق الموضحة في بيان الخصوصية هذا.</p>
-    <p>يجوز لمقدم الخدمة الكشف عن المعلومات المقدمة من المستخدم والمعلومات التي تم جمعها تلقائيًا:</p>
-    <ul>
-        <li>على النحو الذي يطلبه القانون، مثل الامتثال لأمر استدعاء أو عملية قانونية مماثلة؛</li>
-        <li>عندما يعتقدون بحسن نية أن الكشف ضروري لحماية حقوقهم، أو حماية سلامتكم أو سلامة الآخرين، أو التحقيق في الاحتيال، أو الاستجابة لطلب حكومي؛</li>
-        <li>لمقدمي الخدمات الموثوق بهم الذين يعملون نيابة عنهم، وليس لديهم استخدام مستقل للمعلومات التي نكشفها لهم، وقد وافقوا على الالتزام بالقواعد المنصوص عليها في بيان الخصوصية هذا.</li>
+        <li>Device type and operating system</li>
+        <li>IP address (for security and fraud prevention purposes)</li>
     </ul>
 
-    <h2>حقوق إلغاء الاشتراك</h2>
-    <p>يمكنك إيقاف جميع عمليات جمع المعلومات بواسطة التطبيق بسهولة عن طريق إلغاء تثبيته. يمكنك استخدام عمليات إلغاء التثبيت القياسية المتوفرة كجزء من جهازك المحمول أو عبر سوق التطبيقات أو الشبكة.</p>
+    <p><strong>2. How Information is Used</strong></p>
 
-    <h2>سياسة الاحتفاظ بالبيانات</h2>
-    <p>سيحتفظ مقدم الخدمة بالبيانات التي يقدمها المستخدم طالما كنت تستخدم التطبيق ولمدة معقولة بعد ذلك. إذا كنت ترغب في قيامهم بحذف البيانات التي قدمتها عبر التطبيق، فيرجى الاتصال بهم على <strong>contact@icecodeco.com</strong> وسيستجيبون في وقت معقول.</p>
+    <p>The Service Provider uses collected information strictly for the following purposes:</p>
 
-    <h2>الأطفال</h2>
-    <p>لا يستخدم مقدم الخدمة التطبيق لطلب بيانات من الأطفال أو التسويق لهم عن علم ممن هم دون سن 13 عامًا.</p>
-    <p>لا يجمع مقدم الخدمة عن قصد معلومات شخصية يمكن التعرف عليها من الأطفال. يشجع مقدم الخدمة جميع الأطفال على عدم إرسال أي معلومات شخصية يمكن التعرف عليها من خلال التطبيق و/أو الخدمات. يشجع مقدم الخدمة الآباء والأوصياء القانونيين على مراقبة استخدام أطفالهم للإنترنت والمساعدة في تطبيق هذه السياسة من خلال توجيه أطفالهم بعدم تقديم معلومات شخصية يمكن التعرف عليها من خلال التطبيق و/أو الخدمات دون إذنهم. إذا كان لديك سبب للاعتقاد بأن طفلاً قد قدم معلومات شخصية لمقدم الخدمة من خلال التطبيق و/أو الخدمات، فيرجى الاتصال بمقدم الخدمة (<strong>contact@icecodeco.com</strong>) حتى يتمكن من اتخاذ الإجراءات اللازمة. يجب أن يكون عمرك 16 عامًا على الأقل للموافقة على معالجة معلوماتك الشخصية في بلدك (في بعض البلدان، قد نسمح لوالديك أو الوصي عليك بالقيام بذلك نيابة عنك).</p>
+    <ul>
+        <li>Creating and managing user accounts</li>
+        <li>Enabling login and authentication</li>
+        <li>Verifying phone number ownership during registration</li>
+        <li>Managing appointment bookings for beauty centers and dentistry services</li>
+        <li>Ensuring platform security and preventing fraud</li>
+        <li>Improving application performance and stability</li>
+    </ul>
 
-    <h2>الأمان</h2>
-    <p>مقدم الخدمة حريص على الحفاظ على سرية معلوماتك. يوفر مقدم الخدمة ضمانات مادية وإلكترونية وإجرائية لحماية المعلومات التي يقوم بمعالجتها والاحتفاظ بها.</p>
+    <p><strong>3. Account Registration and Authentication</strong></p>
 
-    <h2>التغييرات</h2>
-    <p>قد يتم تحديث سياسة الخصوصية هذه من وقت لآخر لأي سبب. سيقوم مقدم الخدمة بإعلامك بأي تغييرات في سياسة الخصوصية عن طريق تحديث هذه الصفحة بسياسة الخصوصية الجديدة. يُنصح بالاطلاع على سياسة الخصوصية هذه بانتظام بحثًا عن أي تغييرات، حيث أن الاستمرار في الاستخدام يُعتبر موافقة على جميع التغييرات.</p>
-    <p>سياسة الخصوصية هذه سارية اعتبارًا من <strong>2026-05-19</strong>.</p>
+    <p>Users register and log in using email and password.</p>
 
-    <h2>موافقتك</h2>
-    <p>باستخدام التطبيق، فإنك توافق على معالجة معلوماتك على النحو المنصوص عليه في سياسة الخصوصية هذه الآن وعلى النحو المعدل من قبلنا.</p>
+    <p>Passwords are securely stored using hashing techniques and are never stored in plain text.</p>
 
-    <h2>اتصل بنا</h2>
-    <p>إذا كان لديك أي أسئلة بخصوص الخصوصية أثناء استخدام التطبيق، أو كانت لديك أسئلة حول الممارسات، فيرجى الاتصال بمقدم الخدمة عبر البريد الإلكتروني <strong class="contact-highlight">contact@icecodeco.com</strong>.</p>
+    <p>During registration, users may be required to verify their phone number using an OTP code sent to the provided number. This step is used only for verification purposes and is not required for future logins.</p>
 
+    <p><strong>4. Data Storage</strong></p>
 
-</div>
+    <p>User data is securely stored on a custom backend server managed by the Service Provider. Data is not stored locally on the device except for temporary session-related information.</p>
 
+    <p><strong>5. Third-Party Services</strong></p>
+
+    <p>The Application may use trusted third-party services strictly for operational purposes, such as:</p>
+
+    <ul>
+        <li>OTP delivery services for phone number verification</li>
+        <li>Hosting and backend infrastructure providers</li>
+    </ul>
+
+    <p>These providers process data only to perform their required functions and are not permitted to use it for any other purpose.</p>
+
+    <p><strong>6. Data Sharing</strong></p>
+
+    <p>The Service Provider does not sell, rent, or share user personal data with third parties.</p>
+
+    <p>User data may only be disclosed in the following cases:</p>
+
+    <ul>
+        <li>When required by law or legal process</li>
+        <li>When necessary to protect user safety, prevent fraud, or enforce security</li>
+        <li>When required for core service functionality (e.g., OTP delivery systems)</li>
+    </ul>
+
+    <p><strong>7. Data Retention and Deletion</strong></p>
+
+    <p>Users can request deletion of their personal account information within the Application.</p>
+
+    <p>Upon deletion:</p>
+
+    <ul>
+        <li>Personal account data (name, email, phone number, credentials) will be removed from the system</li>
+        <li>Certain non-personal operational records such as booking history or transaction receipts may be retained for business, legal, or financial compliance purposes</li>
+    </ul>
+
+    <p>These retained records do not directly identify users outside the system context.</p>
+
+    <p><strong>8. Location Data</strong></p>
+
+    <p>The Application does not collect or use precise or real-time location data.</p>
+
+    <p><strong>9. Children’s Privacy</strong></p>
+
+    <p>The Application is intended for users aged 16 and above.</p>
+
+    <p>The Service Provider does not knowingly collect personal information from users under the age of 16. If such data is discovered, it will be deleted promptly.</p>
+
+    <p><strong>10. Security</strong></p>
+
+    <p>The Service Provider implements appropriate technical and organizational measures to protect user data, including:</p>
+
+    <ul>
+        <li>HTTPS encrypted communication</li>
+        <li>Secure authentication mechanisms</li>
+        <li>Hashed password storage</li>
+        <li>Protected backend infrastructure</li>
+    </ul>
+
+    <p>However, no system can guarantee absolute security.</p>
+
+    <p><strong>11. Marketing and Advertising</strong></p>
+
+    <p>The Application does not use user data for marketing or advertising purposes.</p>
+
+    <p><strong>12. Changes to This Privacy Policy</strong></p>
+
+    <p>This Privacy Policy may be updated from time to time. Users are encouraged to review it periodically.</p>
+
+    <p>Continued use of the Application after changes constitutes acceptance of the updated policy.</p>
+
+    <p><strong>13. Contact Information</strong></p>
+
+    <p>If you have any questions about this Privacy Policy or data handling practices, you may contact:</p>
+
+    <p>Email: contact@icecodeco.com / Zeyadm792@gmail.com<br>
+    Phone: +20 102 062 2808</p>
+
+    <p><strong>14. Consent</strong></p>
+
+    <p>By using the Application, you agree to the collection and use of information as described in this Privacy Policy.</p>
 </main>
 
 <footer>
-    <div class="label-caps">MOLAGLORA · by Zeyad Mohamed</div>
-    <div class="footer-line"></div>
-    <p>Developer-driven privacy · Transparency first — no hidden data usage</p>
-    <p>© 2026 Zeyad Mohamed. All rights reserved for Molaglora App.</p>
+    <div style="font-family: 'Audiowide', cursive; font-size: 0.9rem;">MOLAGLORA · by Zeyad Mohamed (Ice Code)</div>
+    <div class="footer-divider"></div>
+    <p style="font-size: 0.8rem;">© 2026 Zeyad Mohamed. All rights reserved.</p>
 </footer>
-
-<script>
-function toggleLang() {
-    const en = document.getElementById('content-en');
-    const ar = document.getElementById('content-ar');
-    const hEn = document.getElementById('hero-en');
-    const hAr = document.getElementById('hero-ar');
-    const btn = document.getElementById('langBtn');
-
-    if (en.style.display === 'none') {
-        en.style.display = 'block';
-        ar.style.display = 'none';
-        hEn.style.display = 'block';
-        hAr.style.display = 'none';
-        btn.innerText = 'عربي';
-        document.documentElement.lang = 'en';
-        document.body.style.direction = 'ltr';
-    } else {
-        en.style.display = 'none';
-        ar.style.display = 'block';
-        hEn.style.display = 'none';
-        hAr.style.display = 'block';
-        btn.innerText = 'English';
-        document.documentElement.lang = 'ar';
-        document.body.style.direction = 'rtl';
-    }
-}
-</script>
 
 </body>
 </html>
